@@ -307,6 +307,13 @@
     <Content Include="Content\css\bootstrap-reboot.min.css" />
     <Content Include="Content\css\bootstrap.css" />
     <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\Site2.css" />
+    <Content Include="Content\images\banner\banner_1.jpg" />
+    <Content Include="Content\images\banner\banner_1a.jpg" />
+    <Content Include="Content\images\banner\banner_2.jpg" />
+    <Content Include="Content\images\banner\banner_2a.jpg" />
+    <Content Include="Content\images\banner\banner_3a.jpg" />
+    <Content Include="Content\images\banner\loading-white.gif" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -324,6 +331,7 @@
     <Content Include="bin\roslyn\VBCSCompiler.exe.config" />
     <Content Include="bin\Train_To_Trade.dll.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\CustomeJS\Scripts.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\jquery.min.map" />

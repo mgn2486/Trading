@@ -12,17 +12,19 @@
 
     <!-- Bootstrap core CSS -->
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
-
+    <script src="~/Scripts/jquery-1.10.2.js"></script>
     <!-- Custom styles for this template -->
     <link href="~/Content/business.css" rel="stylesheet">
-    
+
+    <link href="~/Content/css/Site2.css" rel="stylesheet" />
+    <script src="~/Scripts/CustomeJS/Scripts.js"></script>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" style="margin-top: 0px;">
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" >
     <div class="container">
         <a class="navbar-brand" href="#">Train To Trade</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -76,23 +78,6 @@
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/bootstrap")
 @RenderSection("scripts", required: false)
-    
-<script>
-    var currentSlide;
-    var rand;
-    $(document).ready(function() {
-        currentSlide = Math.floor((Math.random() * $('.item').length));
-        rand = currentSlide;
-        $('#myCarousel').carousel(currentSlide);
-        $('#myCarousel').fadeIn(1000);
-        setInterval(function(){ 
-            while(rand == currentSlide){
-                rand = Math.floor((Math.random() * $('.item').length));
-            }
-            currentSlide = rand;
-            $('#myCarousel').carousel(rand);
-        },3000);
-    });
-</script>
+
 </body>
 </html>

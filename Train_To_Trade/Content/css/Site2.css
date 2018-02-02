@@ -1,0 +1,23 @@
+﻿#bannerSet {
+    margin: 0;
+    padding: 0;
+    background: black;
+}
+#wrap img{
+    position:absolute;
+    top:0;
+    display:none;
+}
+.transition{
+    transition:10s;
+}
+.scaleme{
+    transition:10s;
+    transform:scale(1.3);
+}
+.box{
+    /*height:300px;
+    width:500px;*/
+    position:relative;
+    overflow:hidden;
+}
