@@ -7,3 +7,61 @@
         padding-top: 0px;
     }
 }
+
+/*CSS settings for the front page*/
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+#row-section {
+    margin: 40px;
+}
+
+#greyArea {
+    padding: 70px;
+    /*background-image: url("images/small_images/ask.jpg");*/
+    display: table;
+    width: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('images/small_images/ask.jpg');
+    background-position: center top;
+    color: white;
+}
+
+.button-row {
+    margin: 20px;
+}
+
+/*Floating images*/
+.banner-holder {
+    position: relative;
+    display: block;
+}
+
+.plus-image {
+    left: 7%;
+    top: 70%;
+    position: absolute;
+    margin-top: -25px;
+    margin-left: -25px;
+}
+
+#motivationalText {
+    background: green;
+    overflow: hidden;
+    color: white;
+    font-family: Open sans;
+}
+
+/* Hidden DIV elements */
+
+#secretDiv {
+    display: none;
+}
+.ParaFormat {
+    text-align: justify; 
+    line-height: 1.8;
+}
