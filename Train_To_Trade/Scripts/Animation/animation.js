@@ -1,6 +1,6 @@
 ﻿//made by vipul mirajkar thevipulm.appspot.com
-var TxtType = function (el, toRotate, period) {
-    this.toRotate = toRotate;
+  var TxtType = function (el, toRotate, period) {
+  this.toRotate = toRotate;
     this.el = el;
     this.loopNum = 0;
     this.period = parseInt(period, 10) || 2000;
