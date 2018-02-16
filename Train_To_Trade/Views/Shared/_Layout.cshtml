@@ -87,6 +87,18 @@
     <!-- Bootstrap core JavaScript -->
     <script src="~/Scripts/jquery.min.js"></script>
     <script src="~/Scripts/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('img').hide();
+
+            function anim() {
+                $("#wrap img").first().appendTo('#wrap').fadeOut(3500).addClass('transition').addClass('scaleme');
+                $("#wrap img").first().fadeIn(3500).removeClass('scaleme');
+                setTimeout(anim, 3700);
+            }
+            anim();
+        });
+    </script>
 </div>
 
 @Scripts.Render("~/bundles/jquery")

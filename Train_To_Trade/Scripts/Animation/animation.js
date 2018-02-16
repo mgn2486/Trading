@@ -55,3 +55,17 @@ window.onload = function () {
     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
     document.body.appendChild(css);
 };
+
+
+// ------     Banner Image Banner annimation   ----------------------
+
+$(function () {
+    $('img').hide();
+
+    function anim() {
+        $("#wrap img").first().appendTo('#wrap').fadeOut(3500).addClass('transition').addClass('scaleme');
+        $("#wrap img").first().fadeIn(3500).removeClass('scaleme');
+        setTimeout(anim, 3700);
+    }
+    anim();
+});
