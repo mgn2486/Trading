@@ -1,9 +1,10 @@
-﻿@{
+﻿@model Train_To_Trade.Models.WhatsAppModel
+@{
     ViewBag.Title = "Home Page";
 }
 <!-- Heading Row -->
 <div class="row my-4">
-    
+
     <div class="col-lg-8 col-sm-12 col-xs-12 col-md-8 " id="bannerWrapper">
         <div class="box">
             <div id="wrap">
@@ -13,7 +14,7 @@
             </div>
         </div>
     </div>
-    
+
 
     <!-- /.col-lg-8 -->
     <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
@@ -152,7 +153,7 @@
         <br />
         <!-- FAQ - row -->
         <div class="row">
-                <h1 class="text-center" style="text-shadow: 0 3px black; text-align: center;">Frequently Asked Questions</h1>
+            <h1 class="text-center" style="text-shadow: 0 3px black; text-align: center;">Frequently Asked Questions</h1>
         </div>
         <!-- /   FAQ - row -->
 
@@ -184,25 +185,28 @@
                 <p class="ParaFormat">If you have any questions about joining our courses, funded accounts programs, trading room or anything else, please contact us here and one of our team members will come back to you as soon as possible.</p>
             </div>
             <div class="col-lg-7">
+                <div id="WhatsAppResponse" class="col-xs-12">
+                    <p>Message Sent</p>
+                </div>
                 <form>
                     <div class="row button-row">
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="fnameTxt">First Name: *</label>
-                            <input type="text" id="fnameTxt" class="form-control" placeholder="First name">
+                            @Html.TextBoxFor(m => m.firstName, new {@class = "form-control", @placeholder = "First name"})
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="lnameTxt">Last Name: *</label>
-                            <input type="text" id="lnameTxt" class="form-control" placeholder="Last name: *">
+                            @Html.TextBoxFor(m => m.lastName, new {@class = "form-control", @placeholder = "Last name"})
                         </div>
                     </div>
                     <div class="row button-row">
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="emailTxt">Email: *</label>
-                            <input type="text" id="emailTxt" class="form-control" placeholder="Email">
+                            @Html.TextBoxFor(m => m.emailaddress, new {@class = "form-control", @placeholder = "Email Address "})
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="phoneTxt">Phone: *</label>
-                            <input type="text" id="phoneTxt" class="form-control" placeholder="Phone">
+                            @Html.TextBoxFor(m => m.whatsAppCell, new {@class = "form-control", @placeholder = "Phone Number "})
                         </div>
                     </div>
                     <div class="row button-row ">
