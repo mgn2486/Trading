@@ -181,8 +181,8 @@
         <hr />
         <div class="row col-md-12">
             <div class="col-lg-5">
-                <h2><span style="font-family: Spoiler; font-size: 30px;">Like to know more about Train to Trade on a Personal Note?</span></h2>
-                <p class="ParaFormat">If you have any questions about joining our courses, funded accounts programs, trading room or anything else, please contact us here and one of our team members will come back to you as soon as possible.</p>
+                <h2><span style="font-family: Spoiler; font-size: 30px;">Like to know more about <b>Train to Trade</b> on a Personal Note? We have a group Whatsapp group chat. You can also drop us the following details and you will be added to the group where great minds share ideas. It is more orless a forum for train to trade. </span></h2>
+                <p class="ParaFormat">Typical discusion include questions about joining our courses, funded accounts programs, trading room or anything else, please feel free to check this out.</p>
             </div>
             <div class="col-lg-7">
                 <div id="WhatsAppResponse" class="col-xs-12">
@@ -192,21 +192,25 @@
                     <div class="row button-row">
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="fnameTxt">First Name: *</label>
-                            @Html.TextBoxFor(m => m.firstName, new {@class = "form-control", @placeholder = "First name"})
+                            @Html.TextBoxFor(m => m.firstName, new { @class = "form-control", @placeholder = "First name" })
+                            @Html.ValidationMessageFor(model => model.firstName)
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="lnameTxt">Last Name: *</label>
-                            @Html.TextBoxFor(m => m.lastName, new {@class = "form-control", @placeholder = "Last name"})
+                            @Html.TextBoxFor(m => m.lastName, new { @class = "form-control", @placeholder = "Last name" })
+                            @Html.ValidationMessageFor(model => model.lastName)
                         </div>
                     </div>
                     <div class="row button-row">
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="emailTxt">Email: *</label>
                             @Html.TextBoxFor(m => m.emailaddress, new {@class = "form-control", @placeholder = "Email Address "})
+                            @Html.ValidationMessageFor(model => model.emailaddress)
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="phoneTxt">Phone: *</label>
                             @Html.TextBoxFor(m => m.whatsAppCell, new {@class = "form-control", @placeholder = "Phone Number "})
+                            @Html.ValidationMessageFor(model => model.whatsAppCell)
                         </div>
                     </div>
                     <div class="row button-row ">
