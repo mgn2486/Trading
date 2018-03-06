@@ -66,6 +66,11 @@ textarea {
     line-height: 1.8;
 }
 
+.borderedImage {
+    border-style: double;
+    padding: 14px;
+    background-color: #d1e7f4;
+}
 
 /* ------    Banner Wrapper  ----------*/
 

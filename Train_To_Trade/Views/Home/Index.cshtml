@@ -40,7 +40,7 @@
         At <b>Train to Trade (TTT)</b> we provide a start to finish, turn-key solution for everyday people who are either looking to invest or trade on the forex or stock market successfully, or looking for peace of mind and more control over their trading and investing. We are one of the tested trading training providers. Here we help traders to be able to distinguish high probability trade setups and the ones traders should ignore. With our technical experts in the field of trading we can give you good trading foundation as well as trading tips.
         Unlike most educators, we offer ongoing support, coaching, mentoring and advisory services to our clients. Our education programs are not the finish line, they are where our partnership with you begins. At our very core is the belief that a better financial future is possible for just about anyone, and this belief has held true since we started educating every day South Africans.
     </p>
-
+    d
     <div class="row">
         <div>
             <div class="row col-md-12 row-section" style="margin-top: 20px;">
@@ -115,10 +115,11 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h2 style="font-family:'Times New Roman', Times, serif;">Courses</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                        <p class="card-text">We have a a structured set of courses designed to upgrade your skills in the this environment of trading. Please click on the button below to leran more abut our courses.</p>
                     </div>
                     <div class="card-footer">
-                        <a href="#" class="btn btn-primary">More Info</a>
+                        <a onclick="@("window.location.href='" + @Url.Action("Courses", "Home") + "'");" class="btn btn-primary">More Info</a>
+                        
                     </div>
                 </div>
             </div>
@@ -127,7 +128,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h2 style="font-family:'Times New Roman', Times, serif;" class="card-title">Training</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem sunt quam eaque, vel, non in id dolore voluptates quos eligendi labore.</p>
+                        <p class="card-text">We offere training at variouse disignated areas please do not hesitate to contact us to schedule up your session, we will fit you in the right session</p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary">More Info</a>
@@ -139,7 +140,7 @@
                 <div class="card h-100">
                     <div class="card-body">
                         <h2 class="card-title" style="font-family:'Times New Roman', Times, serif;">Booking</h2>
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem magni quas ex numquam, maxime minus quam molestias corporis quod, ea minima accusamus.</p>
+                        <p class="card-text">Booking can be done through our offices please fill in the contact form with the respective details we can contact you with so we can arrange a session with you.</p>
                     </div>
                     <div class="card-footer">
                         <a href="#" class="btn btn-primary">More Info</a>
@@ -181,8 +182,9 @@
         <hr />
         <div class="row col-md-12">
             <div class="col-lg-5">
-                <h2><span style="font-family: Spoiler; font-size: 30px;">Like to know more about <b>Train to Trade</b> on a Personal Note? We have a group Whatsapp group chat. You can also drop us the following details and you will be added to the group where great minds share ideas. It is more orless a forum for train to trade. </span></h2>
-                <p class="ParaFormat">Typical discusion include questions about joining our courses, funded accounts programs, trading room or anything else, please feel free to check this out.</p>
+                <h2><span style="font-family: Spoiler; font-size: 30px;">Like to know more about <b>Train to Trade</b> on a Personal Note? </h2><br />
+               <p class="ParaFormat"> We have a Whatsapp group chat. You can also drop us the following details and you will be added to the group where great minds share ideas. It is more orless a forum for train to trade. </span></h2>
+                Typical discusion include questions about joining our courses, funded accounts programs, trading room or anything else, please feel free to check this out.</p>
             </div>
             <div class="col-lg-7">
                 <div id="WhatsAppResponse" class="col-xs-12">
@@ -193,25 +195,25 @@
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="fnameTxt">First Name: *</label>
                             @Html.TextBoxFor(m => m.firstName, new { @class = "form-control", @placeholder = "First name" })
-                            @Html.ValidationMessageFor(model => model.firstName)
+                            <p style="color: red;">@Html.ValidationMessageFor(model => model.firstName)</p>
                         </div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="lnameTxt">Last Name: *</label>
                             @Html.TextBoxFor(m => m.lastName, new { @class = "form-control", @placeholder = "Last name" })
-                            @Html.ValidationMessageFor(model => model.lastName)
-                        </div>
+                            <p style="color: red;">@Html.ValidationMessageFor(model => model.lastName)</p>
+</div>
                     </div>
                     <div class="row button-row">
                         <div class="col-lg-6 col-md-6 col-xs-12">
                             <label class="col-form-label" for="emailTxt">Email: *</label>
                             @Html.TextBoxFor(m => m.emailaddress, new {@class = "form-control", @placeholder = "Email Address "})
-                            @Html.ValidationMessageFor(model => model.emailaddress)
-                        </div>
+                            <p style="color: red;">@Html.ValidationMessageFor(model => model.emailaddress)</p>
+</div>
                         <div class="col-lg-6 col-md-6 col-xs-12">
-                            <label class="col-form-label" for="phoneTxt">Phone: *</label>
+                            <label class="col-form-label" for="whatsAppCell">Phone: *</label>
                             @Html.TextBoxFor(m => m.whatsAppCell, new {@class = "form-control", @placeholder = "Phone Number "})
-                            @Html.ValidationMessageFor(model => model.whatsAppCell)
-                        </div>
+                            <p style="color: red;">@Html.ValidationMessageFor(model => model.whatsAppCell)</p>
+</div>
                     </div>
                     <div class="row button-row ">
                         <div class="col-lg-3">
