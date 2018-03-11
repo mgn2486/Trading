@@ -9,6 +9,14 @@
     }
 }
 
+body{ 
+    background: url(~/Content/images/background/back.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 /*CSS settings for the front page*/
 
 /* Set width on the form input elements since they're 100% wide by default */
