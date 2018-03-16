@@ -66,7 +66,7 @@ namespace Train_To_Trade.Controllers
                     MailMessage msz = new MailMessage();
                     msz.From = new MailAddress(contact.emailaddress);//Email which you are getting 
                     //from contact us page 
-                    msz.To.Add("info@traintotrade.co.za");//Where mail will be sent 
+                    msz.To.Add("taumarch@gmail.con");//Where mail will be sent 
                     msz.Subject = "REF: MAIL FROM CLIENT CONTACT PAGE";
                     msz.Body = String.Format("Client: "+ contact.fullName+"\nEmail: "+contact.emailaddress+
                                              "\nCell: "+contact.contactNumber+
@@ -81,7 +81,7 @@ namespace Train_To_Trade.Controllers
                     smtp.Port = 587;
 
                     smtp.Credentials = new System.Net.NetworkCredential
-                        ("info@traintotrade.co.za", "Munashe@2015");
+                        ("massy19@gmail.com", "Busi@2631");
 
                     smtp.EnableSsl = true;
 
