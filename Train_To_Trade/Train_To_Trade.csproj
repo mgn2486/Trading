@@ -232,9 +232,10 @@
     <Content Include="Content\css\bootstrap.min.css" />
     <Content Include="Content\images\background\back.jpg" />
     <Content Include="Content\images\Courses\course_1.jpg" />
-    <Content Include="Content\images\Courses\forex-trading-training.jpg" />
-    <Content Include="Content\images\Courses\forex.png" />
-    <Content Include="Content\images\Courses\learn_Banner.jpg" />
+    <Content Include="Content\images\Courses\learn_banner_2.jpg" />
+    <Content Include="Content\images\Courses\learn_banner_3.jpg" />
+    <Content Include="Content\images\Courses\learn_banner_4.jpg" />
+    <Content Include="Content\images\Courses\learn_banner_5.jpg" />
     <Content Include="Content\images\small_images\ask.jpg" />
     <Content Include="Content\images\small_images\experience.png" />
     <Content Include="Content\images\small_images\forex.jpg" />
